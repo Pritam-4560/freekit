@@ -1,13 +1,16 @@
-# FreeKit India
+# FitFile
 
-Free browser-based tools for India. No signup, no watermark, files never uploaded.
+Make any file fit any upload limit. Free, no signup, no watermark, and files never leave your device.
 
-- In-hand salary and tax calculator (new vs old regime, FY 2026-27)
-- EMI, gratuity and HRA exemption calculators
-- Resize image to KB, image to PDF, merge PDF, QR code (incl. UPI)
+**Tools:** fit image to an exact KB range and pixel size (JPG/PNG/WebP/HEIC), compress PDF to a target size, image to PDF, merge PDF, extract/remove PDF pages, QR codes (link, Wi-Fi, UPI), loan EMI (any currency), and India salary/tax, gratuity and HRA calculators.
 
-Static site: `index.html` is self-contained. Host free on GitHub Pages, Netlify or Cloudflare Pages.
+`index.html` is a self-contained static site (libraries load lazily from cdnjs/jsDelivr). Host free on GitHub Pages, Netlify or Cloudflare Pages.
 
-Run engine tests: `node test.js`
+## Ads
+Ad slots are the `<div class="ad" data-ad="...">` placeholders (home, below each tool, desktop sidebar). Replace them with your AdSense code after approval.
 
-Estimates only, not tax or financial advice.
+## Tests
+- `node test.js`: tax engine unit tests
+- `python3 test_e2e.py`: 37 browser checks, run at PC and phone sizes (needs Playwright + Chrome and the test fixtures)
+
+Calculators give estimates only, not tax or financial advice.
