@@ -869,6 +869,772 @@
    ]
   },
   {
+   "slug": "bmi-calculator",
+   "name": "BMI Calculator",
+   "category": "life",
+   "summary": "Body mass index from height and weight.",
+   "url": "https://pritam-4560.github.io/freekit/tools/bmi-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "u",
+     "type": "select"
+    },
+    {
+     "id": "w",
+     "type": "number"
+    },
+    {
+     "id": "h",
+     "type": "number"
+    },
+    {
+     "id": "in",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "age-calculator",
+   "name": "Age Calculator",
+   "category": "life",
+   "summary": "Exact age in years, months and days.",
+   "url": "https://pritam-4560.github.io/freekit/tools/age-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "dob",
+     "type": "date"
+    },
+    {
+     "id": "on",
+     "type": "date"
+    }
+   ]
+  },
+  {
+   "slug": "days-between-dates",
+   "name": "Days Between Dates",
+   "category": "life",
+   "summary": "Days, weeks and working days between two dates.",
+   "url": "https://pritam-4560.github.io/freekit/tools/days-between-dates/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "a",
+     "type": "date"
+    },
+    {
+     "id": "b",
+     "type": "date"
+    },
+    {
+     "id": "inc",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "add-days-to-date",
+   "name": "Add or Subtract Days from a Date",
+   "category": "life",
+   "summary": "What date is it after N days, months or years?",
+   "url": "https://pritam-4560.github.io/freekit/tools/add-days-to-date/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "d",
+     "type": "date"
+    },
+    {
+     "id": "op",
+     "type": "select"
+    },
+    {
+     "id": "n",
+     "type": "number"
+    },
+    {
+     "id": "un",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "cgpa-to-percentage",
+   "name": "CGPA to Percentage",
+   "category": "life",
+   "summary": "Convert CGPA to percentage (CBSE ×9.5 and others).",
+   "url": "https://pritam-4560.github.io/freekit/tools/cgpa-to-percentage/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "c",
+     "type": "number"
+    },
+    {
+     "id": "f",
+     "type": "select"
+    },
+    {
+     "id": "p",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "length-converter",
+   "name": "Length Converter",
+   "category": "convert",
+   "summary": "Convert Metres, Kilometres, Centimetres, Millimetres and more.",
+   "url": "https://pritam-4560.github.io/freekit/tools/length-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "v",
+     "type": "number"
+    },
+    {
+     "id": "a",
+     "type": "select"
+    },
+    {
+     "id": "b",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "weight-converter",
+   "name": "Weight Converter",
+   "category": "convert",
+   "summary": "Convert Kilograms, Grams, Milligrams, Tonnes and more.",
+   "url": "https://pritam-4560.github.io/freekit/tools/weight-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "v",
+     "type": "number"
+    },
+    {
+     "id": "a",
+     "type": "select"
+    },
+    {
+     "id": "b",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "area-converter",
+   "name": "Area Converter",
+   "category": "convert",
+   "summary": "Convert Square metres, Square feet, Square yards / gaj, Acres and more.",
+   "url": "https://pritam-4560.github.io/freekit/tools/area-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "v",
+     "type": "number"
+    },
+    {
+     "id": "a",
+     "type": "select"
+    },
+    {
+     "id": "b",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "volume-converter",
+   "name": "Volume Converter",
+   "category": "convert",
+   "summary": "Convert Litres, Millilitres, Cubic metres, US gallons and more.",
+   "url": "https://pritam-4560.github.io/freekit/tools/volume-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "v",
+     "type": "number"
+    },
+    {
+     "id": "a",
+     "type": "select"
+    },
+    {
+     "id": "b",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "speed-converter",
+   "name": "Speed Converter",
+   "category": "convert",
+   "summary": "Convert Kilometres per hour, Metres per second, Miles per hour, Knots and more.",
+   "url": "https://pritam-4560.github.io/freekit/tools/speed-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "v",
+     "type": "number"
+    },
+    {
+     "id": "a",
+     "type": "select"
+    },
+    {
+     "id": "b",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "time-converter",
+   "name": "Time Converter",
+   "category": "convert",
+   "summary": "Convert Seconds, Minutes, Hours, Days and more.",
+   "url": "https://pritam-4560.github.io/freekit/tools/time-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "v",
+     "type": "number"
+    },
+    {
+     "id": "a",
+     "type": "select"
+    },
+    {
+     "id": "b",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "temperature-converter",
+   "name": "Temperature Converter",
+   "category": "convert",
+   "summary": "Celsius, Fahrenheit and Kelvin.",
+   "url": "https://pritam-4560.github.io/freekit/tools/temperature-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "v",
+     "type": "number"
+    },
+    {
+     "id": "a",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "data-size-converter",
+   "name": "Data Size Converter",
+   "category": "convert",
+   "summary": "Bytes, KB, MB, GB and TB.",
+   "url": "https://pritam-4560.github.io/freekit/tools/data-size-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "v",
+     "type": "number"
+    },
+    {
+     "id": "a",
+     "type": "select"
+    },
+    {
+     "id": "base",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "number-to-words",
+   "name": "Number to Words",
+   "category": "convert",
+   "summary": "Write amounts in words, Indian or international.",
+   "url": "https://pritam-4560.github.io/freekit/tools/number-to-words/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "n",
+     "type": "text"
+    },
+    {
+     "id": "sys",
+     "type": "select"
+    },
+    {
+     "id": "rs",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "roman-numeral-converter",
+   "name": "Roman Numeral Converter",
+   "category": "convert",
+   "summary": "Numbers to Roman numerals and back.",
+   "url": "https://pritam-4560.github.io/freekit/tools/roman-numeral-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "v",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "slug": "number-base-converter",
+   "name": "Number Base Converter",
+   "category": "convert",
+   "summary": "Binary, octal, decimal and hexadecimal.",
+   "url": "https://pritam-4560.github.io/freekit/tools/number-base-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "v",
+     "type": "text"
+    },
+    {
+     "id": "b",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "color-converter",
+   "name": "Colour Converter",
+   "category": "convert",
+   "summary": "HEX, RGB and HSL with a colour picker.",
+   "url": "https://pritam-4560.github.io/freekit/tools/color-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "c",
+     "type": "color"
+    },
+    {
+     "id": "t",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "slug": "unix-timestamp-converter",
+   "name": "Unix Timestamp Converter",
+   "category": "convert",
+   "summary": "Epoch seconds or milliseconds to a date, and back.",
+   "url": "https://pritam-4560.github.io/freekit/tools/unix-timestamp-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "ts",
+     "type": "text"
+    },
+    {
+     "id": "dt",
+     "type": "datetime-local"
+    }
+   ]
+  },
+  {
+   "slug": "time-zone-converter",
+   "name": "Time Zone Converter",
+   "category": "convert",
+   "summary": "Convert a time between cities and countries.",
+   "url": "https://pritam-4560.github.io/freekit/tools/time-zone-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "dt",
+     "type": "datetime-local"
+    },
+    {
+     "id": "from",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "word-counter",
+   "name": "Word Counter",
+   "category": "text",
+   "summary": "Count words, characters, sentences and reading time.",
+   "url": "https://pritam-4560.github.io/freekit/tools/word-counter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    }
+   ]
+  },
+  {
+   "slug": "character-counter",
+   "name": "Character Counter",
+   "category": "text",
+   "summary": "Count characters against limits like X or SMS.",
+   "url": "https://pritam-4560.github.io/freekit/tools/character-counter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    }
+   ]
+  },
+  {
+   "slug": "case-converter",
+   "name": "Case Converter",
+   "category": "text",
+   "summary": "UPPER, lower, Title, Sentence, camelCase and more.",
+   "url": "https://pritam-4560.github.io/freekit/tools/case-converter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    }
+   ]
+  },
+  {
+   "slug": "remove-duplicate-lines",
+   "name": "Remove Duplicate Lines",
+   "category": "text",
+   "summary": "Delete repeated lines and keep the first of each.",
+   "url": "https://pritam-4560.github.io/freekit/tools/remove-duplicate-lines/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    },
+    {
+     "id": "ic",
+     "type": "checkbox"
+    },
+    {
+     "id": "tr",
+     "type": "checkbox"
+    },
+    {
+     "id": "bl",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "sort-lines",
+   "name": "Sort Lines Alphabetically",
+   "category": "text",
+   "summary": "Sort a list A to Z, Z to A, by length, or randomly.",
+   "url": "https://pritam-4560.github.io/freekit/tools/sort-lines/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    },
+    {
+     "id": "mode",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "slug-generator",
+   "name": "Slug Generator",
+   "category": "text",
+   "summary": "Turn a title into a clean URL slug.",
+   "url": "https://pritam-4560.github.io/freekit/tools/slug-generator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    }
+   ]
+  },
+  {
+   "slug": "lorem-ipsum-generator",
+   "name": "Lorem Ipsum Generator",
+   "category": "text",
+   "summary": "Placeholder text by paragraphs, sentences or words.",
+   "url": "https://pritam-4560.github.io/freekit/tools/lorem-ipsum-generator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "n",
+     "type": "number"
+    },
+    {
+     "id": "u",
+     "type": "select"
+    },
+    {
+     "id": "st",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "text-diff-checker",
+   "name": "Text Diff Checker",
+   "category": "text",
+   "summary": "Compare two texts and see what changed.",
+   "url": "https://pritam-4560.github.io/freekit/tools/text-diff-checker/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "a",
+     "type": "textarea"
+    },
+    {
+     "id": "b",
+     "type": "textarea"
+    },
+    {
+     "id": "ws",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "json-formatter",
+   "name": "JSON Formatter & Validator",
+   "category": "dev",
+   "summary": "Pretty-print, minify and validate JSON.",
+   "url": "https://pritam-4560.github.io/freekit/tools/json-formatter/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    },
+    {
+     "id": "mode",
+     "type": "select"
+    },
+    {
+     "id": "sort",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "base64-encode-decode",
+   "name": "Base64 Encode & Decode",
+   "category": "dev",
+   "summary": "Encode text to Base64 or decode it back.",
+   "url": "https://pritam-4560.github.io/freekit/tools/base64-encode-decode/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    },
+    {
+     "id": "op",
+     "type": "select"
+    },
+    {
+     "id": "url",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "url-encode-decode",
+   "name": "URL Encode & Decode",
+   "category": "dev",
+   "summary": "Percent-encode or decode URLs and text.",
+   "url": "https://pritam-4560.github.io/freekit/tools/url-encode-decode/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    },
+    {
+     "id": "op",
+     "type": "select"
+    },
+    {
+     "id": "sc",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "jwt-decoder",
+   "name": "JWT Decoder",
+   "category": "dev",
+   "summary": "Read the header and payload of a JWT.",
+   "url": "https://pritam-4560.github.io/freekit/tools/jwt-decoder/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    }
+   ]
+  },
+  {
+   "slug": "csv-to-json",
+   "name": "CSV to JSON",
+   "category": "dev",
+   "summary": "Convert CSV rows to a JSON array.",
+   "url": "https://pritam-4560.github.io/freekit/tools/csv-to-json/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    },
+    {
+     "id": "d",
+     "type": "select"
+    },
+    {
+     "id": "hdr",
+     "type": "checkbox"
+    },
+    {
+     "id": "num",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "json-to-csv",
+   "name": "JSON to CSV",
+   "category": "dev",
+   "summary": "Convert a JSON array to CSV for Excel.",
+   "url": "https://pritam-4560.github.io/freekit/tools/json-to-csv/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "in",
+     "type": "textarea"
+    },
+    {
+     "id": "d",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "regex-tester",
+   "name": "Regex Tester",
+   "category": "dev",
+   "summary": "Test regular expressions with live highlighting.",
+   "url": "https://pritam-4560.github.io/freekit/tools/regex-tester/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "re",
+     "type": "text"
+    },
+    {
+     "id": "g",
+     "type": "checkbox"
+    },
+    {
+     "id": "i",
+     "type": "checkbox"
+    },
+    {
+     "id": "m",
+     "type": "checkbox"
+    },
+    {
+     "id": "s",
+     "type": "checkbox"
+    },
+    {
+     "id": "tx",
+     "type": "textarea"
+    }
+   ]
+  },
+  {
+   "slug": "hash-generator",
+   "name": "Hash Generator (MD5, SHA-256)",
+   "category": "dev",
+   "summary": "MD5, SHA-1, SHA-256 and SHA-512 of text or a file.",
+   "url": "https://pritam-4560.github.io/freekit/tools/hash-generator/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "tx",
+     "type": "textarea"
+    }
+   ]
+  },
+  {
+   "slug": "uuid-generator",
+   "name": "UUID Generator",
+   "category": "dev",
+   "summary": "Random version 4 UUIDs, in bulk.",
+   "url": "https://pritam-4560.github.io/freekit/tools/uuid-generator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "n",
+     "type": "number"
+    },
+    {
+     "id": "up",
+     "type": "checkbox"
+    },
+    {
+     "id": "nd",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "password-generator",
+   "name": "Password Generator",
+   "category": "dev",
+   "summary": "Strong random passwords made on your device.",
+   "url": "https://pritam-4560.github.io/freekit/tools/password-generator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "len",
+     "type": "range"
+    },
+    {
+     "id": "lo",
+     "type": "checkbox"
+    },
+    {
+     "id": "up",
+     "type": "checkbox"
+    },
+    {
+     "id": "di",
+     "type": "checkbox"
+    },
+    {
+     "id": "sy",
+     "type": "checkbox"
+    },
+    {
+     "id": "am",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
    "slug": "qr-code-generator",
    "name": "QR Code Generator",
    "category": "gen",

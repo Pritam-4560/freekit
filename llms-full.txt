@@ -240,6 +240,228 @@ What it does: Create a clean invoice PDF, with optional GST.
 Input: URL parameters
 Fields: from (text), fgst (text), to (text), inv (text), date (date), gst (number), items (textarea), notes (textarea)
 
+## BMI Calculator
+URL: https://pritam-4560.github.io/freekit/tools/bmi-calculator/
+What it does: Body mass index from height and weight.
+Input: URL parameters
+Fields: u (select), w (number), h (number), in (number)
+
+## Age Calculator
+URL: https://pritam-4560.github.io/freekit/tools/age-calculator/
+What it does: Exact age in years, months and days.
+Input: URL parameters
+Fields: dob (date), on (date)
+
+## Days Between Dates
+URL: https://pritam-4560.github.io/freekit/tools/days-between-dates/
+What it does: Days, weeks and working days between two dates.
+Input: URL parameters
+Fields: a (date), b (date), inc (checkbox)
+
+## Add or Subtract Days from a Date
+URL: https://pritam-4560.github.io/freekit/tools/add-days-to-date/
+What it does: What date is it after N days, months or years?
+Input: URL parameters
+Fields: d (date), op (select), n (number), un (select)
+
+## CGPA to Percentage
+URL: https://pritam-4560.github.io/freekit/tools/cgpa-to-percentage/
+What it does: Convert CGPA to percentage (CBSE ×9.5 and others).
+Input: URL parameters
+Fields: c (number), f (select), p (number)
+
+## Length Converter
+URL: https://pritam-4560.github.io/freekit/tools/length-converter/
+What it does: Convert Metres, Kilometres, Centimetres, Millimetres and more.
+Input: URL parameters
+Fields: v (number), a (select), b (select)
+
+## Weight Converter
+URL: https://pritam-4560.github.io/freekit/tools/weight-converter/
+What it does: Convert Kilograms, Grams, Milligrams, Tonnes and more.
+Input: URL parameters
+Fields: v (number), a (select), b (select)
+
+## Area Converter
+URL: https://pritam-4560.github.io/freekit/tools/area-converter/
+What it does: Convert Square metres, Square feet, Square yards / gaj, Acres and more.
+Input: URL parameters
+Fields: v (number), a (select), b (select)
+
+## Volume Converter
+URL: https://pritam-4560.github.io/freekit/tools/volume-converter/
+What it does: Convert Litres, Millilitres, Cubic metres, US gallons and more.
+Input: URL parameters
+Fields: v (number), a (select), b (select)
+
+## Speed Converter
+URL: https://pritam-4560.github.io/freekit/tools/speed-converter/
+What it does: Convert Kilometres per hour, Metres per second, Miles per hour, Knots and more.
+Input: URL parameters
+Fields: v (number), a (select), b (select)
+
+## Time Converter
+URL: https://pritam-4560.github.io/freekit/tools/time-converter/
+What it does: Convert Seconds, Minutes, Hours, Days and more.
+Input: URL parameters
+Fields: v (number), a (select), b (select)
+
+## Temperature Converter
+URL: https://pritam-4560.github.io/freekit/tools/temperature-converter/
+What it does: Celsius, Fahrenheit and Kelvin.
+Input: URL parameters
+Fields: v (number), a (select)
+
+## Data Size Converter
+URL: https://pritam-4560.github.io/freekit/tools/data-size-converter/
+What it does: Bytes, KB, MB, GB and TB.
+Input: URL parameters
+Fields: v (number), a (select), base (select)
+
+## Number to Words
+URL: https://pritam-4560.github.io/freekit/tools/number-to-words/
+What it does: Write amounts in words, Indian or international.
+Input: URL parameters
+Fields: n (text), sys (select), rs (checkbox)
+
+## Roman Numeral Converter
+URL: https://pritam-4560.github.io/freekit/tools/roman-numeral-converter/
+What it does: Numbers to Roman numerals and back.
+Input: URL parameters
+Fields: v (text)
+
+## Number Base Converter
+URL: https://pritam-4560.github.io/freekit/tools/number-base-converter/
+What it does: Binary, octal, decimal and hexadecimal.
+Input: URL parameters
+Fields: v (text), b (select)
+
+## Colour Converter
+URL: https://pritam-4560.github.io/freekit/tools/color-converter/
+What it does: HEX, RGB and HSL with a colour picker.
+Input: URL parameters
+Fields: c (color), t (text)
+
+## Unix Timestamp Converter
+URL: https://pritam-4560.github.io/freekit/tools/unix-timestamp-converter/
+What it does: Epoch seconds or milliseconds to a date, and back.
+Input: URL parameters
+Fields: ts (text), dt (datetime-local)
+
+## Time Zone Converter
+URL: https://pritam-4560.github.io/freekit/tools/time-zone-converter/
+What it does: Convert a time between cities and countries.
+Input: URL parameters
+Fields: dt (datetime-local), from (select)
+
+## Word Counter
+URL: https://pritam-4560.github.io/freekit/tools/word-counter/
+What it does: Count words, characters, sentences and reading time.
+Input: URL parameters
+Fields: in (textarea)
+
+## Character Counter
+URL: https://pritam-4560.github.io/freekit/tools/character-counter/
+What it does: Count characters against limits like X or SMS.
+Input: URL parameters
+Fields: in (textarea)
+
+## Case Converter
+URL: https://pritam-4560.github.io/freekit/tools/case-converter/
+What it does: UPPER, lower, Title, Sentence, camelCase and more.
+Input: URL parameters
+Fields: in (textarea)
+
+## Remove Duplicate Lines
+URL: https://pritam-4560.github.io/freekit/tools/remove-duplicate-lines/
+What it does: Delete repeated lines and keep the first of each.
+Input: URL parameters
+Fields: in (textarea), ic (checkbox), tr (checkbox), bl (checkbox)
+
+## Sort Lines Alphabetically
+URL: https://pritam-4560.github.io/freekit/tools/sort-lines/
+What it does: Sort a list A to Z, Z to A, by length, or randomly.
+Input: URL parameters
+Fields: in (textarea), mode (select)
+
+## Slug Generator
+URL: https://pritam-4560.github.io/freekit/tools/slug-generator/
+What it does: Turn a title into a clean URL slug.
+Input: URL parameters
+Fields: in (textarea)
+
+## Lorem Ipsum Generator
+URL: https://pritam-4560.github.io/freekit/tools/lorem-ipsum-generator/
+What it does: Placeholder text by paragraphs, sentences or words.
+Input: URL parameters
+Fields: n (number), u (select), st (checkbox)
+
+## Text Diff Checker
+URL: https://pritam-4560.github.io/freekit/tools/text-diff-checker/
+What it does: Compare two texts and see what changed.
+Input: URL parameters
+Fields: a (textarea), b (textarea), ws (checkbox)
+
+## JSON Formatter & Validator
+URL: https://pritam-4560.github.io/freekit/tools/json-formatter/
+What it does: Pretty-print, minify and validate JSON.
+Input: URL parameters
+Fields: in (textarea), mode (select), sort (checkbox)
+
+## Base64 Encode & Decode
+URL: https://pritam-4560.github.io/freekit/tools/base64-encode-decode/
+What it does: Encode text to Base64 or decode it back.
+Input: URL parameters
+Fields: in (textarea), op (select), url (checkbox)
+
+## URL Encode & Decode
+URL: https://pritam-4560.github.io/freekit/tools/url-encode-decode/
+What it does: Percent-encode or decode URLs and text.
+Input: URL parameters
+Fields: in (textarea), op (select), sc (select)
+
+## JWT Decoder
+URL: https://pritam-4560.github.io/freekit/tools/jwt-decoder/
+What it does: Read the header and payload of a JWT.
+Input: URL parameters
+Fields: in (textarea)
+
+## CSV to JSON
+URL: https://pritam-4560.github.io/freekit/tools/csv-to-json/
+What it does: Convert CSV rows to a JSON array.
+Input: URL parameters
+Fields: in (textarea), d (select), hdr (checkbox), num (checkbox)
+
+## JSON to CSV
+URL: https://pritam-4560.github.io/freekit/tools/json-to-csv/
+What it does: Convert a JSON array to CSV for Excel.
+Input: URL parameters
+Fields: in (textarea), d (select)
+
+## Regex Tester
+URL: https://pritam-4560.github.io/freekit/tools/regex-tester/
+What it does: Test regular expressions with live highlighting.
+Input: URL parameters
+Fields: re (text), g (checkbox), i (checkbox), m (checkbox), s (checkbox), tx (textarea)
+
+## Hash Generator (MD5, SHA-256)
+URL: https://pritam-4560.github.io/freekit/tools/hash-generator/
+What it does: MD5, SHA-1, SHA-256 and SHA-512 of text or a file.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: tx (textarea)
+
+## UUID Generator
+URL: https://pritam-4560.github.io/freekit/tools/uuid-generator/
+What it does: Random version 4 UUIDs, in bulk.
+Input: URL parameters
+Fields: n (number), up (checkbox), nd (checkbox)
+
+## Password Generator
+URL: https://pritam-4560.github.io/freekit/tools/password-generator/
+What it does: Strong random passwords made on your device.
+Input: URL parameters
+Fields: len (range), lo (checkbox), up (checkbox), di (checkbox), sy (checkbox), am (checkbox)
+
 ## QR Code Generator
 URL: https://pritam-4560.github.io/freekit/tools/qr-code-generator/
 What it does: QR for links, Wi-Fi, UPI, WhatsApp, email and more.
