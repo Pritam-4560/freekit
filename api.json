@@ -1,0 +1,1080 @@
+{
+ "site": "FitFile",
+ "url": "https://pritam-4560.github.io/freekit/",
+ "howTo": "https://pritam-4560.github.io/freekit/for-ai.html",
+ "prefill": "Open the tool url with ?fieldId=value&run=1. Field ids are listed per tool. Results appear as text inside #tool .out.",
+ "tools": [
+  {
+   "slug": "resize-image-to-kb",
+   "name": "Resize Image to KB",
+   "category": "image",
+   "summary": "Make a photo smaller than a size limit, like 50 KB.",
+   "url": "https://pritam-4560.github.io/freekit/tools/resize-image-to-kb/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "max",
+     "type": "number"
+    },
+    {
+     "id": "min",
+     "type": "number"
+    },
+    {
+     "id": "fmt",
+     "type": "select"
+    },
+    {
+     "id": "w",
+     "type": "number"
+    },
+    {
+     "id": "h",
+     "type": "number"
+    },
+    {
+     "id": "mode",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "compress-image",
+   "name": "Compress Image",
+   "category": "image",
+   "summary": "Shrink JPG, PNG or WebP with a quality slider.",
+   "url": "https://pritam-4560.github.io/freekit/tools/compress-image/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "q",
+     "type": "range"
+    },
+    {
+     "id": "fmt",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "resize-image",
+   "name": "Resize Image",
+   "category": "image",
+   "summary": "Change width and height in pixels or percent.",
+   "url": "https://pritam-4560.github.io/freekit/tools/resize-image/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "by",
+     "type": "select"
+    },
+    {
+     "id": "fmt",
+     "type": "select"
+    },
+    {
+     "id": "w",
+     "type": "number"
+    },
+    {
+     "id": "h",
+     "type": "number"
+    },
+    {
+     "id": "pct",
+     "type": "number"
+    },
+    {
+     "id": "lock",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "convert-image",
+   "name": "Convert Image Format",
+   "category": "image",
+   "summary": "Convert between JPG, PNG and WebP.",
+   "url": "https://pritam-4560.github.io/freekit/tools/convert-image/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "fmt",
+     "type": "select"
+    },
+    {
+     "id": "q",
+     "type": "range"
+    }
+   ]
+  },
+  {
+   "slug": "heic-to-jpg",
+   "name": "HEIC to JPG",
+   "category": "image",
+   "summary": "Convert iPhone HEIC photos to JPG.",
+   "url": "https://pritam-4560.github.io/freekit/tools/heic-to-jpg/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "q",
+     "type": "range"
+    }
+   ]
+  },
+  {
+   "slug": "rotate-flip-image",
+   "name": "Rotate & Flip Image",
+   "category": "image",
+   "summary": "Rotate 90° or flip an image.",
+   "url": "https://pritam-4560.github.io/freekit/tools/rotate-flip-image/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "rot",
+     "type": "select"
+    },
+    {
+     "id": "flip",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "remove-image-metadata",
+   "name": "Remove Photo Metadata (EXIF)",
+   "category": "image",
+   "summary": "Strip location and camera data from a photo.",
+   "url": "https://pritam-4560.github.io/freekit/tools/remove-image-metadata/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "fmt",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "add-watermark-to-image",
+   "name": "Add Watermark to Image",
+   "category": "image",
+   "summary": "Put your own text watermark on a photo.",
+   "url": "https://pritam-4560.github.io/freekit/tools/add-watermark-to-image/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "txt",
+     "type": "text"
+    },
+    {
+     "id": "pos",
+     "type": "select"
+    },
+    {
+     "id": "sz",
+     "type": "range"
+    },
+    {
+     "id": "op",
+     "type": "range"
+    },
+    {
+     "id": "col",
+     "type": "color"
+    }
+   ]
+  },
+  {
+   "slug": "image-to-base64",
+   "name": "Image to Base64",
+   "category": "image",
+   "summary": "Turn an image into a Base64 data URL.",
+   "url": "https://pritam-4560.github.io/freekit/tools/image-to-base64/",
+   "needsFile": true,
+   "fields": []
+  },
+  {
+   "slug": "passport-photo-maker",
+   "name": "Passport Photo Maker",
+   "category": "image",
+   "summary": "Crop a photo to passport size and print sheet.",
+   "url": "https://pritam-4560.github.io/freekit/tools/passport-photo-maker/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "pre",
+     "type": "select"
+    },
+    {
+     "id": "outmode",
+     "type": "select"
+    },
+    {
+     "id": "mw",
+     "type": "number"
+    },
+    {
+     "id": "mh",
+     "type": "number"
+    },
+    {
+     "id": "zoom",
+     "type": "range"
+    },
+    {
+     "id": "ox",
+     "type": "range"
+    },
+    {
+     "id": "oy",
+     "type": "range"
+    }
+   ]
+  },
+  {
+   "slug": "signature-cleaner",
+   "name": "Signature Cleaner",
+   "category": "image",
+   "summary": "Make a photo of your signature transparent.",
+   "url": "https://pritam-4560.github.io/freekit/tools/signature-cleaner/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "th",
+     "type": "range"
+    },
+    {
+     "id": "mode",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "image-color-picker",
+   "name": "Image Colour Picker",
+   "category": "image",
+   "summary": "Click a photo to get its HEX and RGB colour.",
+   "url": "https://pritam-4560.github.io/freekit/tools/image-color-picker/",
+   "needsFile": true,
+   "fields": []
+  },
+  {
+   "slug": "compress-pdf",
+   "name": "Compress PDF",
+   "category": "pdf",
+   "summary": "Shrink a PDF under a size limit like 200 KB.",
+   "url": "https://pritam-4560.github.io/freekit/tools/compress-pdf/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "max",
+     "type": "number"
+    },
+    {
+     "id": "gray",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "merge-pdf",
+   "name": "Merge PDF",
+   "category": "pdf",
+   "summary": "Join several PDFs into one, in your order.",
+   "url": "https://pritam-4560.github.io/freekit/tools/merge-pdf/",
+   "needsFile": true,
+   "fields": []
+  },
+  {
+   "slug": "split-pdf",
+   "name": "Split PDF / Extract Pages",
+   "category": "pdf",
+   "summary": "Keep only the pages you pick.",
+   "url": "https://pritam-4560.github.io/freekit/tools/split-pdf/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "pages",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "slug": "remove-pdf-pages",
+   "name": "Remove Pages from PDF",
+   "category": "pdf",
+   "summary": "Delete unwanted pages from a PDF.",
+   "url": "https://pritam-4560.github.io/freekit/tools/remove-pdf-pages/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "pages",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "slug": "image-to-pdf",
+   "name": "Image to PDF",
+   "category": "pdf",
+   "summary": "Turn photos into one PDF, with optional size limit.",
+   "url": "https://pritam-4560.github.io/freekit/tools/image-to-pdf/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "page",
+     "type": "select"
+    },
+    {
+     "id": "max",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "jpg-to-pdf",
+   "name": "JPG to PDF",
+   "category": "pdf",
+   "summary": "Turn photos into one PDF, with optional size limit.",
+   "url": "https://pritam-4560.github.io/freekit/tools/jpg-to-pdf/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "page",
+     "type": "select"
+    },
+    {
+     "id": "max",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "pdf-to-jpg",
+   "name": "PDF to JPG",
+   "category": "pdf",
+   "summary": "Turn every PDF page into a JPG image.",
+   "url": "https://pritam-4560.github.io/freekit/tools/pdf-to-jpg/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "fmt",
+     "type": "select"
+    },
+    {
+     "id": "sc",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "rotate-pdf",
+   "name": "Rotate PDF",
+   "category": "pdf",
+   "summary": "Rotate all or some pages of a PDF.",
+   "url": "https://pritam-4560.github.io/freekit/tools/rotate-pdf/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "deg",
+     "type": "select"
+    },
+    {
+     "id": "pages",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "slug": "add-page-numbers-to-pdf",
+   "name": "Add Page Numbers to PDF",
+   "category": "pdf",
+   "summary": "Number every page of a PDF.",
+   "url": "https://pritam-4560.github.io/freekit/tools/add-page-numbers-to-pdf/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "pos",
+     "type": "select"
+    },
+    {
+     "id": "fmt",
+     "type": "select"
+    },
+    {
+     "id": "start",
+     "type": "number"
+    },
+    {
+     "id": "size",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "pdf-watermark",
+   "name": "Add Watermark to PDF",
+   "category": "pdf",
+   "summary": "Stamp text across every page.",
+   "url": "https://pritam-4560.github.io/freekit/tools/pdf-watermark/",
+   "needsFile": true,
+   "fields": [
+    {
+     "id": "txt",
+     "type": "text"
+    },
+    {
+     "id": "op",
+     "type": "range"
+    }
+   ]
+  },
+  {
+   "slug": "pdf-to-text",
+   "name": "PDF to Text",
+   "category": "pdf",
+   "summary": "Copy the text out of a PDF.",
+   "url": "https://pritam-4560.github.io/freekit/tools/pdf-to-text/",
+   "needsFile": true,
+   "fields": []
+  },
+  {
+   "slug": "emi-calculator",
+   "name": "EMI Calculator",
+   "category": "finance",
+   "summary": "Monthly EMI, total interest and payoff for any loan.",
+   "url": "https://pritam-4560.github.io/freekit/tools/emi-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "principal",
+     "type": "number"
+    },
+    {
+     "id": "rate",
+     "type": "number"
+    },
+    {
+     "id": "years",
+     "type": "number"
+    },
+    {
+     "id": "unit",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "sip-calculator",
+   "name": "SIP Calculator",
+   "category": "finance",
+   "summary": "Future value of a monthly SIP at an expected return.",
+   "url": "https://pritam-4560.github.io/freekit/tools/sip-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "amt",
+     "type": "number"
+    },
+    {
+     "id": "rate",
+     "type": "number"
+    },
+    {
+     "id": "years",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "compound-interest-calculator",
+   "name": "Compound Interest Calculator",
+   "category": "finance",
+   "summary": "Growth of a lump sum with compounding.",
+   "url": "https://pritam-4560.github.io/freekit/tools/compound-interest-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "p",
+     "type": "number"
+    },
+    {
+     "id": "rate",
+     "type": "number"
+    },
+    {
+     "id": "years",
+     "type": "number"
+    },
+    {
+     "id": "freq",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "simple-interest-calculator",
+   "name": "Simple Interest Calculator",
+   "category": "finance",
+   "summary": "Interest = P × R × T ÷ 100.",
+   "url": "https://pritam-4560.github.io/freekit/tools/simple-interest-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "p",
+     "type": "number"
+    },
+    {
+     "id": "rate",
+     "type": "number"
+    },
+    {
+     "id": "years",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "fd-calculator",
+   "name": "FD Calculator",
+   "category": "finance",
+   "summary": "Fixed deposit maturity amount.",
+   "url": "https://pritam-4560.github.io/freekit/tools/fd-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "p",
+     "type": "number"
+    },
+    {
+     "id": "rate",
+     "type": "number"
+    },
+    {
+     "id": "years",
+     "type": "number"
+    },
+    {
+     "id": "freq",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "cagr-calculator",
+   "name": "CAGR Calculator",
+   "category": "finance",
+   "summary": "Compound annual growth rate between two values.",
+   "url": "https://pritam-4560.github.io/freekit/tools/cagr-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "s",
+     "type": "number"
+    },
+    {
+     "id": "e",
+     "type": "number"
+    },
+    {
+     "id": "years",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "gst-calculator",
+   "name": "GST Calculator",
+   "category": "finance",
+   "summary": "Add or remove GST, with the current India slabs.",
+   "url": "https://pritam-4560.github.io/freekit/tools/gst-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "amt",
+     "type": "number"
+    },
+    {
+     "id": "rate",
+     "type": "number"
+    },
+    {
+     "id": "mode",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "percentage-calculator",
+   "name": "Percentage Calculator",
+   "category": "finance",
+   "summary": "X% of Y, what percent, and percent change.",
+   "url": "https://pritam-4560.github.io/freekit/tools/percentage-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "a",
+     "type": "number"
+    },
+    {
+     "id": "b",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "discount-calculator",
+   "name": "Discount Calculator",
+   "category": "finance",
+   "summary": "Final price after a percentage discount.",
+   "url": "https://pritam-4560.github.io/freekit/tools/discount-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "price",
+     "type": "number"
+    },
+    {
+     "id": "off",
+     "type": "number"
+    },
+    {
+     "id": "off2",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "tip-calculator",
+   "name": "Tip & Bill Split Calculator",
+   "category": "finance",
+   "summary": "Tip and split a bill between people.",
+   "url": "https://pritam-4560.github.io/freekit/tools/tip-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "bill",
+     "type": "number"
+    },
+    {
+     "id": "tip",
+     "type": "number"
+    },
+    {
+     "id": "ppl",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "in-hand-salary-calculator",
+   "name": "In-Hand Salary Calculator",
+   "category": "india",
+   "summary": "Take-home pay under new and old tax regime, FY 2026-27.",
+   "url": "https://pritam-4560.github.io/freekit/tools/in-hand-salary-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "gross",
+     "type": "number"
+    },
+    {
+     "id": "basic",
+     "type": "number"
+    },
+    {
+     "id": "pt",
+     "type": "number"
+    },
+    {
+     "id": "c80",
+     "type": "number"
+    },
+    {
+     "id": "d80",
+     "type": "number"
+    },
+    {
+     "id": "oth",
+     "type": "number"
+    },
+    {
+     "id": "pfcap",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "gratuity-calculator",
+   "name": "Gratuity Calculator",
+   "category": "india",
+   "summary": "Gratuity from last salary and years of service.",
+   "url": "https://pritam-4560.github.io/freekit/tools/gratuity-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "b",
+     "type": "number"
+    },
+    {
+     "id": "y",
+     "type": "number"
+    },
+    {
+     "id": "m",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "hra-exemption-calculator",
+   "name": "HRA Exemption Calculator",
+   "category": "india",
+   "summary": "Tax-free HRA under the old regime.",
+   "url": "https://pritam-4560.github.io/freekit/tools/hra-exemption-calculator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "b",
+     "type": "number"
+    },
+    {
+     "id": "h",
+     "type": "number"
+    },
+    {
+     "id": "r",
+     "type": "number"
+    },
+    {
+     "id": "c",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "gstin-validator",
+   "name": "GSTIN Validator",
+   "category": "india",
+   "summary": "Check a GST number format, state and checksum.",
+   "url": "https://pritam-4560.github.io/freekit/tools/gstin-validator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "g",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "slug": "pan-validator",
+   "name": "PAN Format Checker",
+   "category": "india",
+   "summary": "Check PAN structure and holder type.",
+   "url": "https://pritam-4560.github.io/freekit/tools/pan-validator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "p",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "slug": "rent-receipt-generator",
+   "name": "Rent Receipt Generator",
+   "category": "india",
+   "summary": "Monthly rent receipts as a PDF, for HRA claims.",
+   "url": "https://pritam-4560.github.io/freekit/tools/rent-receipt-generator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "tenant",
+     "type": "text"
+    },
+    {
+     "id": "landlord",
+     "type": "text"
+    },
+    {
+     "id": "lpan",
+     "type": "text"
+    },
+    {
+     "id": "rent",
+     "type": "number"
+    },
+    {
+     "id": "addr",
+     "type": "text"
+    },
+    {
+     "id": "sm",
+     "type": "select"
+    },
+    {
+     "id": "sy",
+     "type": "number"
+    },
+    {
+     "id": "cnt",
+     "type": "number"
+    },
+    {
+     "id": "mode",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "invoice-generator",
+   "name": "Invoice Generator",
+   "category": "india",
+   "summary": "Create a clean invoice PDF, with optional GST.",
+   "url": "https://pritam-4560.github.io/freekit/tools/invoice-generator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "from",
+     "type": "text"
+    },
+    {
+     "id": "fgst",
+     "type": "text"
+    },
+    {
+     "id": "to",
+     "type": "text"
+    },
+    {
+     "id": "inv",
+     "type": "text"
+    },
+    {
+     "id": "date",
+     "type": "date"
+    },
+    {
+     "id": "gst",
+     "type": "number"
+    },
+    {
+     "id": "items",
+     "type": "textarea"
+    },
+    {
+     "id": "notes",
+     "type": "textarea"
+    }
+   ]
+  },
+  {
+   "slug": "qr-code-generator",
+   "name": "QR Code Generator",
+   "category": "gen",
+   "summary": "QR for links, Wi-Fi, UPI, WhatsApp, email and more.",
+   "url": "https://pritam-4560.github.io/freekit/tools/qr-code-generator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "type",
+     "type": "select"
+    },
+    {
+     "id": "text",
+     "type": "textarea"
+    },
+    {
+     "id": "ssid",
+     "type": "text"
+    },
+    {
+     "id": "wpass",
+     "type": "text"
+    },
+    {
+     "id": "wsec",
+     "type": "select"
+    },
+    {
+     "id": "upi",
+     "type": "text"
+    },
+    {
+     "id": "upn",
+     "type": "text"
+    },
+    {
+     "id": "upa",
+     "type": "number"
+    },
+    {
+     "id": "wan",
+     "type": "text"
+    },
+    {
+     "id": "wam",
+     "type": "text"
+    },
+    {
+     "id": "ema",
+     "type": "text"
+    },
+    {
+     "id": "ems",
+     "type": "text"
+    },
+    {
+     "id": "tel",
+     "type": "text"
+    },
+    {
+     "id": "ecl",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "barcode-generator",
+   "name": "Barcode Generator",
+   "category": "gen",
+   "summary": "Code 128, EAN-13, UPC and more as PNG.",
+   "url": "https://pritam-4560.github.io/freekit/tools/barcode-generator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "val",
+     "type": "text"
+    },
+    {
+     "id": "fmt",
+     "type": "select"
+    },
+    {
+     "id": "txt",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "qr-code-reader",
+   "name": "QR Code Reader",
+   "category": "gen",
+   "summary": "Read a QR code from a photo or screenshot.",
+   "url": "https://pritam-4560.github.io/freekit/tools/qr-code-reader/",
+   "needsFile": true,
+   "fields": []
+  },
+  {
+   "slug": "random-number-generator",
+   "name": "Random Number Generator",
+   "category": "gen",
+   "summary": "Random numbers in a range, with or without repeats.",
+   "url": "https://pritam-4560.github.io/freekit/tools/random-number-generator/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "min",
+     "type": "number"
+    },
+    {
+     "id": "max",
+     "type": "number"
+    },
+    {
+     "id": "cnt",
+     "type": "number"
+    },
+    {
+     "id": "uniq",
+     "type": "checkbox"
+    }
+   ]
+  },
+  {
+   "slug": "coin-flip-and-dice",
+   "name": "Coin Flip & Dice Roller",
+   "category": "gen",
+   "summary": "Flip a coin or roll dice.",
+   "url": "https://pritam-4560.github.io/freekit/tools/coin-flip-and-dice/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "nd",
+     "type": "number"
+    },
+    {
+     "id": "sides",
+     "type": "select"
+    }
+   ]
+  },
+  {
+   "slug": "random-name-picker",
+   "name": "Random Name Picker",
+   "category": "gen",
+   "summary": "Pick winners or make random teams from a list.",
+   "url": "https://pritam-4560.github.io/freekit/tools/random-name-picker/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "names",
+     "type": "textarea"
+    },
+    {
+     "id": "mode",
+     "type": "select"
+    },
+    {
+     "id": "n",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "online-stopwatch",
+   "name": "Online Stopwatch",
+   "category": "gen",
+   "summary": "Stopwatch with laps.",
+   "url": "https://pritam-4560.github.io/freekit/tools/online-stopwatch/",
+   "needsFile": false,
+   "fields": []
+  },
+  {
+   "slug": "countdown-timer",
+   "name": "Countdown Timer",
+   "category": "gen",
+   "summary": "Countdown with a sound alert.",
+   "url": "https://pritam-4560.github.io/freekit/tools/countdown-timer/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "h",
+     "type": "number"
+    },
+    {
+     "id": "m",
+     "type": "number"
+    },
+    {
+     "id": "s",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "slug": "online-notepad",
+   "name": "Online Notepad",
+   "category": "gen",
+   "summary": "A private notepad that saves in your browser.",
+   "url": "https://pritam-4560.github.io/freekit/tools/online-notepad/",
+   "needsFile": false,
+   "fields": [
+    {
+     "id": "pad",
+     "type": "textarea"
+    }
+   ]
+  }
+ ]
+}

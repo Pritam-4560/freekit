@@ -1,0 +1,295 @@
+# FitFile full tool reference
+
+## Resize Image to KB
+URL: https://pritam-4560.github.io/freekit/tools/resize-image-to-kb/
+What it does: Make a photo smaller than a size limit, like 50 KB.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: max (number), min (number), fmt (select), w (number), h (number), mode (select)
+
+## Compress Image
+URL: https://pritam-4560.github.io/freekit/tools/compress-image/
+What it does: Shrink JPG, PNG or WebP with a quality slider.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: q (range), fmt (select)
+
+## Resize Image
+URL: https://pritam-4560.github.io/freekit/tools/resize-image/
+What it does: Change width and height in pixels or percent.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: by (select), fmt (select), w (number), h (number), pct (number), lock (checkbox)
+
+## Convert Image Format
+URL: https://pritam-4560.github.io/freekit/tools/convert-image/
+What it does: Convert between JPG, PNG and WebP.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: fmt (select), q (range)
+
+## HEIC to JPG
+URL: https://pritam-4560.github.io/freekit/tools/heic-to-jpg/
+What it does: Convert iPhone HEIC photos to JPG.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: q (range)
+
+## Rotate & Flip Image
+URL: https://pritam-4560.github.io/freekit/tools/rotate-flip-image/
+What it does: Rotate 90° or flip an image.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: rot (select), flip (select)
+
+## Remove Photo Metadata (EXIF)
+URL: https://pritam-4560.github.io/freekit/tools/remove-image-metadata/
+What it does: Strip location and camera data from a photo.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: fmt (select)
+
+## Add Watermark to Image
+URL: https://pritam-4560.github.io/freekit/tools/add-watermark-to-image/
+What it does: Put your own text watermark on a photo.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: txt (text), pos (select), sz (range), op (range), col (color)
+
+## Image to Base64
+URL: https://pritam-4560.github.io/freekit/tools/image-to-base64/
+What it does: Turn an image into a Base64 data URL.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: none
+
+## Passport Photo Maker
+URL: https://pritam-4560.github.io/freekit/tools/passport-photo-maker/
+What it does: Crop a photo to passport size and print sheet.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: pre (select), outmode (select), mw (number), mh (number), zoom (range), ox (range), oy (range)
+
+## Signature Cleaner
+URL: https://pritam-4560.github.io/freekit/tools/signature-cleaner/
+What it does: Make a photo of your signature transparent.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: th (range), mode (select)
+
+## Image Colour Picker
+URL: https://pritam-4560.github.io/freekit/tools/image-color-picker/
+What it does: Click a photo to get its HEX and RGB colour.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: none
+
+## Compress PDF
+URL: https://pritam-4560.github.io/freekit/tools/compress-pdf/
+What it does: Shrink a PDF under a size limit like 200 KB.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: max (number), gray (checkbox)
+
+## Merge PDF
+URL: https://pritam-4560.github.io/freekit/tools/merge-pdf/
+What it does: Join several PDFs into one, in your order.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: none
+
+## Split PDF / Extract Pages
+URL: https://pritam-4560.github.io/freekit/tools/split-pdf/
+What it does: Keep only the pages you pick.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: pages (text)
+
+## Remove Pages from PDF
+URL: https://pritam-4560.github.io/freekit/tools/remove-pdf-pages/
+What it does: Delete unwanted pages from a PDF.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: pages (text)
+
+## Image to PDF
+URL: https://pritam-4560.github.io/freekit/tools/image-to-pdf/
+What it does: Turn photos into one PDF, with optional size limit.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: page (select), max (number)
+
+## JPG to PDF
+URL: https://pritam-4560.github.io/freekit/tools/jpg-to-pdf/
+What it does: Turn photos into one PDF, with optional size limit.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: page (select), max (number)
+
+## PDF to JPG
+URL: https://pritam-4560.github.io/freekit/tools/pdf-to-jpg/
+What it does: Turn every PDF page into a JPG image.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: fmt (select), sc (select)
+
+## Rotate PDF
+URL: https://pritam-4560.github.io/freekit/tools/rotate-pdf/
+What it does: Rotate all or some pages of a PDF.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: deg (select), pages (text)
+
+## Add Page Numbers to PDF
+URL: https://pritam-4560.github.io/freekit/tools/add-page-numbers-to-pdf/
+What it does: Number every page of a PDF.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: pos (select), fmt (select), start (number), size (number)
+
+## Add Watermark to PDF
+URL: https://pritam-4560.github.io/freekit/tools/pdf-watermark/
+What it does: Stamp text across every page.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: txt (text), op (range)
+
+## PDF to Text
+URL: https://pritam-4560.github.io/freekit/tools/pdf-to-text/
+What it does: Copy the text out of a PDF.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: none
+
+## EMI Calculator
+URL: https://pritam-4560.github.io/freekit/tools/emi-calculator/
+What it does: Monthly EMI, total interest and payoff for any loan.
+Input: URL parameters
+Fields: principal (number), rate (number), years (number), unit (select)
+
+## SIP Calculator
+URL: https://pritam-4560.github.io/freekit/tools/sip-calculator/
+What it does: Future value of a monthly SIP at an expected return.
+Input: URL parameters
+Fields: amt (number), rate (number), years (number)
+
+## Compound Interest Calculator
+URL: https://pritam-4560.github.io/freekit/tools/compound-interest-calculator/
+What it does: Growth of a lump sum with compounding.
+Input: URL parameters
+Fields: p (number), rate (number), years (number), freq (select)
+
+## Simple Interest Calculator
+URL: https://pritam-4560.github.io/freekit/tools/simple-interest-calculator/
+What it does: Interest = P × R × T ÷ 100.
+Input: URL parameters
+Fields: p (number), rate (number), years (number)
+
+## FD Calculator
+URL: https://pritam-4560.github.io/freekit/tools/fd-calculator/
+What it does: Fixed deposit maturity amount.
+Input: URL parameters
+Fields: p (number), rate (number), years (number), freq (select)
+
+## CAGR Calculator
+URL: https://pritam-4560.github.io/freekit/tools/cagr-calculator/
+What it does: Compound annual growth rate between two values.
+Input: URL parameters
+Fields: s (number), e (number), years (number)
+
+## GST Calculator
+URL: https://pritam-4560.github.io/freekit/tools/gst-calculator/
+What it does: Add or remove GST, with the current India slabs.
+Input: URL parameters
+Fields: amt (number), rate (number), mode (select)
+
+## Percentage Calculator
+URL: https://pritam-4560.github.io/freekit/tools/percentage-calculator/
+What it does: X% of Y, what percent, and percent change.
+Input: URL parameters
+Fields: a (number), b (number)
+
+## Discount Calculator
+URL: https://pritam-4560.github.io/freekit/tools/discount-calculator/
+What it does: Final price after a percentage discount.
+Input: URL parameters
+Fields: price (number), off (number), off2 (number)
+
+## Tip & Bill Split Calculator
+URL: https://pritam-4560.github.io/freekit/tools/tip-calculator/
+What it does: Tip and split a bill between people.
+Input: URL parameters
+Fields: bill (number), tip (number), ppl (number)
+
+## In-Hand Salary Calculator
+URL: https://pritam-4560.github.io/freekit/tools/in-hand-salary-calculator/
+What it does: Take-home pay under new and old tax regime, FY 2026-27.
+Input: URL parameters
+Fields: gross (number), basic (number), pt (number), c80 (number), d80 (number), oth (number), pfcap (checkbox)
+
+## Gratuity Calculator
+URL: https://pritam-4560.github.io/freekit/tools/gratuity-calculator/
+What it does: Gratuity from last salary and years of service.
+Input: URL parameters
+Fields: b (number), y (number), m (number)
+
+## HRA Exemption Calculator
+URL: https://pritam-4560.github.io/freekit/tools/hra-exemption-calculator/
+What it does: Tax-free HRA under the old regime.
+Input: URL parameters
+Fields: b (number), h (number), r (number), c (select)
+
+## GSTIN Validator
+URL: https://pritam-4560.github.io/freekit/tools/gstin-validator/
+What it does: Check a GST number format, state and checksum.
+Input: URL parameters
+Fields: g (text)
+
+## PAN Format Checker
+URL: https://pritam-4560.github.io/freekit/tools/pan-validator/
+What it does: Check PAN structure and holder type.
+Input: URL parameters
+Fields: p (text)
+
+## Rent Receipt Generator
+URL: https://pritam-4560.github.io/freekit/tools/rent-receipt-generator/
+What it does: Monthly rent receipts as a PDF, for HRA claims.
+Input: URL parameters
+Fields: tenant (text), landlord (text), lpan (text), rent (number), addr (text), sm (select), sy (number), cnt (number), mode (select)
+
+## Invoice Generator
+URL: https://pritam-4560.github.io/freekit/tools/invoice-generator/
+What it does: Create a clean invoice PDF, with optional GST.
+Input: URL parameters
+Fields: from (text), fgst (text), to (text), inv (text), date (date), gst (number), items (textarea), notes (textarea)
+
+## QR Code Generator
+URL: https://pritam-4560.github.io/freekit/tools/qr-code-generator/
+What it does: QR for links, Wi-Fi, UPI, WhatsApp, email and more.
+Input: URL parameters
+Fields: type (select), text (textarea), ssid (text), wpass (text), wsec (select), upi (text), upn (text), upa (number), wan (text), wam (text), ema (text), ems (text), tel (text), ecl (select)
+
+## Barcode Generator
+URL: https://pritam-4560.github.io/freekit/tools/barcode-generator/
+What it does: Code 128, EAN-13, UPC and more as PNG.
+Input: URL parameters
+Fields: val (text), fmt (select), txt (checkbox)
+
+## QR Code Reader
+URL: https://pritam-4560.github.io/freekit/tools/qr-code-reader/
+What it does: Read a QR code from a photo or screenshot.
+Input: a file chosen in the browser (cannot be passed by URL)
+Fields: none
+
+## Random Number Generator
+URL: https://pritam-4560.github.io/freekit/tools/random-number-generator/
+What it does: Random numbers in a range, with or without repeats.
+Input: URL parameters
+Fields: min (number), max (number), cnt (number), uniq (checkbox)
+
+## Coin Flip & Dice Roller
+URL: https://pritam-4560.github.io/freekit/tools/coin-flip-and-dice/
+What it does: Flip a coin or roll dice.
+Input: URL parameters
+Fields: nd (number), sides (select)
+
+## Random Name Picker
+URL: https://pritam-4560.github.io/freekit/tools/random-name-picker/
+What it does: Pick winners or make random teams from a list.
+Input: URL parameters
+Fields: names (textarea), mode (select), n (number)
+
+## Online Stopwatch
+URL: https://pritam-4560.github.io/freekit/tools/online-stopwatch/
+What it does: Stopwatch with laps.
+Input: URL parameters
+Fields: none
+
+## Countdown Timer
+URL: https://pritam-4560.github.io/freekit/tools/countdown-timer/
+What it does: Countdown with a sound alert.
+Input: URL parameters
+Fields: h (number), m (number), s (number)
+
+## Online Notepad
+URL: https://pritam-4560.github.io/freekit/tools/online-notepad/
+What it does: A private notepad that saves in your browser.
+Input: URL parameters
+Fields: pad (textarea)
