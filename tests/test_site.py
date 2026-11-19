@@ -26,7 +26,7 @@ with sync_playwright() as p:
         if pg.evaluate('document.documentElement.scrollWidth>innerWidth'): issues.append(('overflow',t['slug']))
         if not pg.query_selector('#tool') or not pg.query_selector('.ad[data-ad="middle"]'): issues.append(('structure',t['slug']))
     pg.goto(B); assert pg.eval_on_selector_all('.tile','e=>e.length')==len(api); assert pg.query_selector('.ad[data-ad="top"]')
-    pg.goto(B+'nope.html'); 
+    pass
     print('issues:',issues[:10],'count',len(issues))
     br.close()
 assert not issues

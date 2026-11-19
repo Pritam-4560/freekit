@@ -4,7 +4,14 @@
   "siteUrl": "https://pritam-4560.github.io/freekit",
   "contactEmail": "",
   "adsenseClient": "",
-  "adSlots": { "top": "", "middle": "", "sidebar": "" },
+  "adSlots": {
+    "top": "",
+    "middle": "",
+    "sidebar": "",
+    "gate": ""
+  },
   "showAdPlaceholders": true,
-  "lastVerified": "November 2026"
+  "lastVerified": "November 2026",
+  "agentGate": true,
+  "donateUrl": ""
 }

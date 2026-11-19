@@ -173,12 +173,23 @@
     if (el.type === 'checkbox') el.checked = /^(1|true|yes|on)$/i.test(String(v)); else el.value = v;
     el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true }));
   };
+  let approved = false;
+  FF.gate = () => new Promise(res => {
+    if (approved || !document.querySelector('meta[name="ff-gate"]')) { res(true); return; }
+    const root = $('tool'), card = document.createElement('div'); card.className = 'card'; card.id = 'gate'; card.setAttribute('role', 'dialog'); card.setAttribute('aria-live', 'polite');
+    card.innerHTML = '<b>🤖 An AI assistant asked to run this tool</b><p class="sub" style="margin:6px 0 0">This tool is free and paid for by ads. Have a look at the sponsor message below, then approve.</p><div id="gate-slot"></div><div class="btns"><button type="button" class="go" id="gok" disabled>Approve (5)</button><button type="button" class="ghost" id="gno">Cancel</button></div>';
+    root.insertBefore(card, root.firstChild);
+    const tpl = $('gate-ad'); if (tpl) { $('gate-slot').appendChild(tpl.content.cloneNode(true)); if (document.querySelector('meta[name="ff-gate-live"]')) try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {} }
+    let n = 5; const b = $('gok'), t = setInterval(() => { n--; if (n > 0) b.textContent = 'Approve (' + n + ')'; else { clearInterval(t); b.disabled = false; b.textContent = 'Approve and run'; } }, 1000);
+    const end = ok => { clearInterval(t); card.remove(); if (ok) approved = true; res(ok); };
+    b.onclick = () => end(true); $('gno').onclick = () => end(false);
+  });
   FF.agent = (slug, d) => {
     const root = $('tool'); if (!root) return;
     const primary = () => root.querySelector('button.go:not(:disabled)');
     const q = new URLSearchParams(location.search); let any = false;
     fields(root).forEach(el => { if (q.has(el.id)) { setField(el, q.get(el.id)); any = true; } });
-    if (any && q.get('run') === '1') { const b = primary(); if (b) b.click(); }
+    if (any && q.get('run') === '1') FF.gate().then(ok => { if (ok) { const b = primary(); if (b) b.click(); } });
     const mc = navigator.modelContext;
     if (mc && mc.registerTool && d) {
       const props = {}; fields(root).forEach(el => { props[el.id] = { type: el.type === 'checkbox' ? 'boolean' : el.type === 'number' || el.type === 'range' ? 'number' : 'string', description: ((root.querySelector('label[for="' + el.id + '"]') || el.closest('label') || {}).textContent || el.id).trim() }; });
@@ -186,6 +197,7 @@
         mc.registerTool({
           name: slug.replace(/-/g, '_'), description: d.title || d.name, inputSchema: { type: 'object', properties: props },
           async execute(args) {
+            if (!(await FF.gate())) return { content: [{ type: 'text', text: 'The user declined to run this tool.' }] };
             fields(root).forEach(el => { if (args && args[el.id] !== undefined) setField(el, args[el.id]); });
             const b = primary(); if (b) b.click(); await new Promise(r => setTimeout(r, 600));
             const text = [...root.querySelectorAll('.out')].map(o => o.innerText.trim()).filter(Boolean).join('\n');

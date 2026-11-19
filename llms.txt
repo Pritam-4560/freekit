@@ -2,7 +2,7 @@
 
 > Free online tools. No signup, no watermark, nothing uploaded. 86 small browser-only tools. Everything runs client-side, nothing is uploaded.
 
-Agents: tools that take only numbers or text can be pre-filled by URL, e.g. `https://pritam-4560.github.io/freekit/tools/emi-calculator/?principal=500000&rate=9&years=5&run=1`. Field ids are in [api.json](https://pritam-4560.github.io/freekit/api.json). Browsers with WebMCP (navigator.modelContext) get every tool registered automatically. Details: [for AI agents](https://pritam-4560.github.io/freekit/for-ai.html).
+Agents: tools that take only numbers or text can be pre-filled by URL, e.g. `https://pritam-4560.github.io/freekit/tools/emi-calculator/?principal=500000&rate=9&years=5&run=1`. Field ids are in [api.json](https://pritam-4560.github.io/freekit/api.json). Browsers with WebMCP (navigator.modelContext) get every tool registered automatically. When an agent runs a tool, the page asks the human to approve first and shows a sponsor message, which is how the site pays for itself. Details: [for AI agents](https://pritam-4560.github.io/freekit/for-ai.html).
 
 ## Tools
 
